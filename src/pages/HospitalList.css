@@ -1,0 +1,112 @@
+.hospital-list-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-header {
+    margin-bottom: var(--spacing-lg);
+}
+
+.list-header .subtitle {
+    margin-bottom: 0;
+}
+
+.highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.hospital-card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.hospital-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+.card-top {
+    display: flex;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hosp-icon {
+    width: 48px;
+    height: 48px;
+    background-color: #EEF2FF;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.hosp-info h3 {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 4px;
+}
+
+.hosp-info .zh-name {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.card-tags {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.tag.bg-green {
+    background-color: #D1FAE5;
+    color: #065F46;
+}
+
+.tag.outline {
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+}
+
+.card-address {
+    font-size: 0.8rem;
+    color: var(--text-main);
+    background-color: var(--background);
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+}
+
+.card-address p {
+    line-height: 1.4;
+}
+
+.en-address {
+    color: var(--text-muted);
+    margin-top: 2px;
+}

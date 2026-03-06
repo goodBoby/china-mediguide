@@ -1,0 +1,104 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+}
+
+.hero-section {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+}
+
+.hero-icon {
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: var(--border-radius);
+    font-size: var(--text-base);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: var(--shadow-md);
+}
+
+.primary-btn {
+    background-color: var(--primary);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.secondary-btn {
+    background-color: var(--surface);
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-sm);
+}
+
+.secondary-btn:hover {
+    background-color: var(--background);
+}
+
+.emergency-section {
+    background-color: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    color: var(--danger);
+}
+
+.emergency-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.danger-icon {
+    color: var(--danger);
+}
+
+.emergency-section p {
+    color: #991B1B;
+    font-size: var(--text-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.danger-btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: var(--text-sm);
+}
+
+.danger-btn.outline {
+    background-color: transparent;
+    border: 1px solid var(--danger);
+    color: var(--danger);
+}
+
+.danger-btn.outline:hover {
+    background-color: #FEE2E2;
+}
+
+.quick-action-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.quick-action-section h3 {
+    font-size: var(--text-base);
+    font-weight: 600;
+}
